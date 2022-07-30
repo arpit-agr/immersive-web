@@ -1,12 +1,14 @@
 const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
 const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
+const esbuild = require("esbuild");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setQuietMode(true);
   eleventyConfig.addPlugin(directoryOutputPlugin);
 
   //Passthrough copy
+	eleventyConfig.addPassthroughCopy("./src/models");
   // eleventyConfig.addPassthroughCopy("./src/fonts");
 	// eleventyConfig.addPassthroughCopy("./src/images");
 	// eleventyConfig.addPassthroughCopy("./src/scripts");
@@ -45,6 +47,19 @@ module.exports = function(eleventyConfig) {
     }
 
     return content;
+  });
+
+  //ELEVENTY AFTER EVENT
+	eleventyConfig.on('eleventy.after', async () => {
+    // Run me after the build ends
+		return esbuild.build({
+      entryPoints: [
+				'src/build-scripts/model-viewer.js'
+			],
+      bundle: true,
+			minify: true,
+      outdir: 'public/scripts'
+    });
   });
 
   return {

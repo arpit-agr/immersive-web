@@ -1,5 +1,29 @@
 {%- extends "layouts/base.html" -%}
 
+{%- block injectHead -%}
+  <script src="/scripts/model-viewer.js"></script>
+{%- endblock -%}
+
 {%- block content -%}
   {{ content | safe }}
+  <!-- FIXME: attributes -->
+  <model-viewer 
+    src="/models/ISS_stationary.glb"
+    ios-src="/models/ISS_stationary.usdz"
+    poster="/models/poster.webp"
+    alt="A 3D model of the International Space Station"
+    shadow-intensity="1"
+    camera-controls
+    auto-rotate
+    ar>
+    <noscript>
+      <img src="/models/poster.webp" alt="International Space Station">
+    </noscript>
+  </model-viewer>
+  <details class="flow step--1">
+    <summary>3D Model credit</summary>
+    <p>
+      <a href="{{ credit.link }}">{{ credit.name }}</a>
+    </p>
+  </details>
 {%- endblock -%}

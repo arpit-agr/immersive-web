@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "fallback";
+  size-adjust: 106%;
+  src: local("Arial Narrow");
+}
+
+/* roboto-condensed-regular - latin */
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("/fonts/roboto-condensed-v25-latin-regular.woff2") format("woff2"),
+    url("/fonts/roboto-condensed-v25-latin-regular.woff") format("woff");
+}
+/* roboto-condensed-700 - latin */
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""),
+    url("/fonts/roboto-condensed-v25-latin-700.woff2") format("woff2"),
+    url("/fonts/roboto-condensed-v25-latin-700.woff") format("woff");
+}

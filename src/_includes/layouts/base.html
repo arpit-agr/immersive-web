@@ -8,20 +8,27 @@
   <!-- CSS -->
   {%- include "css/styles.njk" -%}
   <!-- PRELOAD SCRIPTS AND FONTS-->
+  <link rel="preload" href="/scripts/model-viewer.js" as="script" fetchpriority="high">
   <!-- NAMED BLOCK TO INJECT ELEMENTS FROM LAYOUT FILES -->
   {%- block injectHead -%}{%- endblock -%}
   <!-- META INFORMATION -->
   {%- include "partials/meta.html" -%}
 </head>
-<body>
+<body class="stack">
   <a href="#main" class="skip-to-main">Skip to content</a>
-  <header class="site-head"></header>
-  <main id="main" tabindex="-1">
+  <header class="site-head cluster">
+    <h1>
+      <span>{{ title }}</span>
+      {%- include "snippets/3d-icon.html" -%}
+    </h1>
+    </svg>
+  </header>
+  <main class="stack" id="main" tabindex="-1">
     {%- block content -%}
       This page is under maintenance.
     {%- endblock -%}
   </main>
-  <footer role="contentinfo"></footer>
+  <!-- <footer role="contentinfo"></footer> -->
   {%- block bodyScripts -%}{%- endblock -%}
 </body>
 </html>

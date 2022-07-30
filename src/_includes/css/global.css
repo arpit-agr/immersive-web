@@ -1,0 +1,76 @@
+/* font */
+:root {
+  --font-special: -apple-system, BlinkMacSystemFont, segoe ui, helvetica neue,
+    helvetica, roboto, arial, sans-serif;
+  --font-plain: -apple-system, BlinkMacSystemFont, segoe ui, helvetica neue,
+    helvetica, Cantarell, Ubuntu, roboto, arial, sans-serif;
+  --letter-spacing-0: -0.015em;
+  --letter-spacing-1: 0.04em;
+}
+
+/* color */
+:root {
+  --bg: hsl(0deg 0% 7%);
+  --primary: white;
+  --secondary: hsl(0deg 0% 90%);
+  --tertiary: hsl(0deg 0% 16%);
+  --accent: hsl(209deg 100% 53%);
+}
+
+body {
+  --stack-gap: 1em;
+  --stack-horizontal-alignment: stretch;
+
+  padding: var(--space-s-m);
+  background-color: var(--bg);
+  font-family: var(--font-plain);
+  color: var(--secondary);
+}
+
+@supports (height: 100svh) {
+  body {
+    min-height: 100svh;
+  }
+}
+
+main {
+  --stack-gap: 1em;
+  flex-grow: 1;
+}
+
+h1 {
+  display: block;
+  color: var(--primary);
+  font-size: var(--step-3);
+  font-family: var(--font-special);
+  letter-spacing: var(--letter-spacing-0);
+}
+
+p {
+  max-width: 60ch;
+}
+
+summary {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.site-head svg {
+  inline-size: var(--step-3);
+  block-size: var(--step-3);
+  vertical-align: middle;
+  /* fill: currentColor; */
+}
+
+model-viewer {
+  flex-grow: 1;
+  width: 100%;
+  outline: 2px dashed var(--tertiary);
+  /* min-height: 85vh; */
+}
+
+model-viewer noscript img {
+  height: 85vh;
+  width: auto;
+  margin-inline: auto;
+}
