@@ -95,3 +95,9 @@ model-viewer::part(default-progress-mask) {
 .credit {
   align-self: end;
 }
+
+.ar-model img {
+  inline-size: auto;
+  block-size: 80vh;
+  object-fit: cover;
+}

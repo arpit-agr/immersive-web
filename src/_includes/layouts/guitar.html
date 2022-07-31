@@ -1,0 +1,13 @@
+{%- extends "layouts/base.html" -%}
+
+{%- block content -%}
+  {{ content | safe }}
+  <div class="ar-model">
+    <a rel="ar" href={{ model.usdz }}>
+      <img src={{ model.poster }} alt="{{ model.alt }}">
+    </a>
+  </div>
+  <p class="step--1"> 
+    3D Model credit - <a href="{{ credit.link }}">{{ credit.name }}</a>
+  </p>
+{%- endblock -%}
