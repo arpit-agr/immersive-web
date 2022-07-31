@@ -1,5 +1,5 @@
 ---
-title: International Space Station
+title: International Space&nbsp;Station
 layout: "layouts/home.html"
 credit:
   name: "NASA"

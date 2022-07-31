@@ -41,9 +41,8 @@ main {
 h1 {
   --cluster-gap: 0.5ch;
   /* --cluster-horizontal-alignment: space-between; */
-  --cluster-vertical-alignment: flex-start;
+  --cluster-vertical-alignment: baseline;
   flex-wrap: nowrap;
-  width: 100%;
 
   color: var(--primary);
   font-size: var(--step-3);
@@ -53,7 +52,11 @@ h1 {
 }
 
 p {
-  max-width: 60ch;
+  max-inline-size: 60ch;
+}
+
+a {
+  color: var(--accent);
 }
 
 summary {
@@ -70,13 +73,17 @@ summary {
 
 model-viewer {
   flex-grow: 1;
-  width: 100%;
+  inline-size: 100%;
   outline: 2px dashed var(--tertiary);
   /* min-height: 85vh; */
 }
 
 model-viewer noscript img {
-  height: 85vh;
-  width: auto;
+  inline-size: auto;
+  block-size: 85vh;
   margin-inline: auto;
+}
+
+.credit {
+  align-self: end;
 }
