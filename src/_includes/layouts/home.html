@@ -1,5 +1,9 @@
 {%- extends "layouts/base.html" -%}
 
+{%- block preload -%}
+  <link rel="preload" href="/scripts/model-viewer.js" as="script" fetchpriority="high">
+{%- endblock -%}
+
 {%- block injectHead -%}
   <script src="/scripts/model-viewer.js"></script>
 {%- endblock -%}

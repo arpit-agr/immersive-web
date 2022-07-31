@@ -8,7 +8,7 @@
   <!-- CSS -->
   {%- include "css/styles.njk" -%}
   <!-- PRELOAD SCRIPTS AND FONTS-->
-  <link rel="preload" href="/scripts/model-viewer.js" as="script" fetchpriority="high">
+  {%- block preload -%}{%- endblock -%}
   <!-- NAMED BLOCK TO INJECT ELEMENTS FROM LAYOUT FILES -->
   {%- block injectHead -%}{%- endblock -%}
   <!-- META INFORMATION -->
