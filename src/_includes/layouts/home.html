@@ -6,21 +6,8 @@
 
 {%- block content -%}
   {{ content | safe }}
-  <!-- FIXME: attributes -->
-  <model-viewer 
-    src="/models/ISS_stationary.glb"
-    ios-src="/models/ISS_stationary.usdz"
-    poster="/models/poster.webp"
-    alt="A 3D model of the International Space Station"
-    shadow-intensity="1"
-    camera-controls
-    auto-rotate
-    ar>
-    <noscript>
-      <img src="/models/poster.webp" alt="International Space Station">
-    </noscript>
-  </model-viewer>
-    <p class="credit step--1"> 
-      3D Model credit - <a href="{{ credit.link }}">{{ credit.name }}</a>
-    </p>
+  {%- include "partials/model-viewer.html" -%}
+  <p class="credit step--1"> 
+    3D Model credit - <a href="{{ credit.link }}">{{ credit.name }}</a>
+  </p>
 {%- endblock -%}

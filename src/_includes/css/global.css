@@ -72,16 +72,24 @@ summary {
 }
 
 model-viewer {
+  --poster-color: transparent;
   flex-grow: 1;
   inline-size: 100%;
-  outline: 2px dashed var(--tertiary);
-  /* min-height: 85vh; */
+  outline: 2px solid var(--tertiary);
 }
 
 model-viewer noscript img {
   inline-size: auto;
   block-size: 85vh;
   margin-inline: auto;
+}
+
+model-viewer::part(default-progress-bar) {
+  background-color: var(--primary);
+}
+
+model-viewer::part(default-progress-mask) {
+  display: none;
 }
 
 .credit {

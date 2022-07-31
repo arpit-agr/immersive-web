@@ -1,0 +1,17 @@
+<!-- FIXME: attributes -->
+<model-viewer 
+src={{ model.glb }}
+ios-src={{ model.usdz }}
+poster={{ model.poster }}
+alt={{ model.alt }}
+loading="eager"
+shadow-intensity="1"
+camera-controls
+enable-pan
+touch-action="none"
+auto-rotate
+ar>
+  <noscript>
+    <img src={{ model.poster }} alt={{ model.alt }}>
+  </noscript>
+</model-viewer>
