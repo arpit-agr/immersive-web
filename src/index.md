@@ -1,10 +1,10 @@
 ---
-title: International Space&nbsp;Station
+title: International Space Station
 layout: "layouts/home.html"
 model:
   glb: "/models/ISS_stationary.glb"
   usdz: "/models/ISS_stationary.usdz"
-  poster: "/models/poster.webp"
+  poster: "/models/ISS_stationary.webp"
   alt: "A 3D model of the International Space Station"
 credit:
   name: "NASA"
