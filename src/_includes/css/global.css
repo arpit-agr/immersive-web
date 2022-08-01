@@ -96,8 +96,9 @@ model-viewer::part(default-progress-mask) {
   align-self: end;
 }
 
-.ar-model img {
+/* styling the image removes the 3D-cube badge shown in the top-right corner */
+/* .ar-model img {
   inline-size: auto;
   block-size: 80vh;
   object-fit: cover;
-}
+} */
