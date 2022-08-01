@@ -6,3 +6,4 @@
 for = "/*.usdz"
 [headers.values]
   Content-Type = "model/vnd.usdz+zip"
+  X-Content-Type-Options = "nosniff"
