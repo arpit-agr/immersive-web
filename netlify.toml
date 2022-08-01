@@ -5,4 +5,4 @@
 [[headers]]
 for = "/*.usdz"
 [headers.values]
-  Content-Type = "model/vnd.pixar.usd"
+  Content-Type = "model/vnd.usdz+zip"
