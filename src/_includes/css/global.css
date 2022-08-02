@@ -76,6 +76,38 @@ model-viewer {
   flex-grow: 1;
   inline-size: 100%;
   outline: 2px solid var(--tertiary);
+
+  background-color: var(--bg);
+}
+
+model-viewer .full-screen {
+  display: none;
+}
+
+/* FIXME: ideally I want to hide the button only on iPhone 
+and not on all mobile devices */
+/* FIXME: on iPad, in full screen mode, the close button from the OS 
+and the fullscreen button both appear  */
+
+@media (min-width: 30em) {
+  model-viewer .full-screen {
+    display: inline-block;
+    margin: var(--space-3xs-2xs);
+    margin: 0;
+    padding: var(--space-2xs-xs);
+    background-color: transparent;
+    line-height: 1;
+
+    /* border-radius: 2px; */
+  }
+
+  model-viewer .full-screen:where(:hover, :focus) {
+    background-color: var(--tertiary);
+  }
+
+  .bi-fullscreen {
+    vertical-align: middle;
+  }
 }
 
 model-viewer noscript img {
