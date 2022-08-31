@@ -9,8 +9,8 @@ module.exports = function(eleventyConfig) {
 
   //Passthrough copy
 	eleventyConfig.addPassthroughCopy("./src/models");
+	eleventyConfig.addPassthroughCopy("./src/images");
   // eleventyConfig.addPassthroughCopy("./src/fonts");
-	// eleventyConfig.addPassthroughCopy("./src/images");
 	// eleventyConfig.addPassthroughCopy("./src/scripts");
   // eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 	// eleventyConfig.addPassthroughCopy("./src/icon.svg");
