@@ -10,6 +10,9 @@ camera-controls
 enable-pan
 touch-action="none"
 auto-rotate
+{% if model.scale %}
+  scale="{{ model.scale }}"
+{% endif %}
 ar>
   <noscript>
     <img src={{ model.poster }} alt={{ model.alt }}>
