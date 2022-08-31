@@ -1,9 +1,9 @@
 {
-  "name": "Immersive Web",
-  "description": "A demo to showcase immersive web technologies",
-  "url": "https://immersive-web.netlify.app",
-  "themeColor": "#121212",
-  "colorScheme": "dark",
-  "developerName": "Arpit Agrawal",
-  "developerLink": "arpit.agrawal2502@gmail.com"
+	"name": "Immersive Web",
+	"description": "A demo to showcase 3D models in an immersive manner on the web and in augmented reality",
+	"url": "https://immersive-web.netlify.app",
+	"themeColor": "#121212",
+	"colorScheme": "dark",
+	"developerName": "Arpit Agrawal",
+	"developerLink": "arpit.agrawal2502@gmail.com"
 }

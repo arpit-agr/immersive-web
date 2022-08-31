@@ -1,5 +1,5 @@
 ---
-title: Ganesh
+title: Immersive Ganesh
 layout: "layouts/home.html"
 model:
   glb: "/models/ganesh.glb"
