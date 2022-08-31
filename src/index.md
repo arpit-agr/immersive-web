@@ -1,12 +1,12 @@
 ---
-title: International Space Station
+title: Ganesh
 layout: "layouts/home.html"
 model:
-  glb: "/models/ISS_stationary.glb"
-  usdz: "/models/ISS_stationary.usdz"
-  poster: "/models/ISS_stationary.webp"
-  alt: "A 3D model of the International Space Station"
+  glb: "/models/ganesh.glb"
+  usdz: "/models/ganesh.usdz"
+  poster: "/models/ganesh.webp"
+  alt: "A 3D model of Ganesh"
 credit:
-  name: "NASA"
-  link: "https://solarsystem.nasa.gov/resources/2378/international-space-station-3d-model/"
+  name: "Francesco Coldesina"
+  link: "https://sketchfab.com/3d-models/ganesh-cd4cde91ef6d409e8dd6ecd8a0cab101"
 ---
